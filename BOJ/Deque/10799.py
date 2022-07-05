@@ -1,15 +1,14 @@
 # 쇠막대기
 s = input()
-st = []
+stack = []
 result = 0
 for i in range(len(s)):
     if s[i] == '(':
-        st.append(s[i])
+        stack.append(s[i])
     else:
-        if s[i-1] == '(':
-            st.pop()
-            result += len(st)
+        stack.pop()
+        if s[i-1] == '(': 
+            result += len(stack)
         else:
-            st.pop()
             result += 1
 print(result)

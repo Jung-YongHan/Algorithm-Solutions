@@ -1,3 +1,4 @@
+# 부분 문자열
 t=input()
 p=input()
 
