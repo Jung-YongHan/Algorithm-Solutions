@@ -1,4 +1,4 @@
-# 줄 세우기
+# 2252
 from collections import deque
 
 n, m = map(int, input().split())

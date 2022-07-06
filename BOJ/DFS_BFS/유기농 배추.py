@@ -1,5 +1,4 @@
-# 유기농 배추
-
+# 1012
 from collections import deque
 # import sys
 # sys.setrecursionlimit(int(1e6))

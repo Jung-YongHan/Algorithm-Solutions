@@ -1,5 +1,4 @@
-# 백준 골드바흐의 추측
-# 어떤 짝수가 두 소수의 합으로 구할 수 있다는 
+# 9020
 import sys
 t = int(sys.stdin.readline())
 m = []

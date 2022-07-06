@@ -1,4 +1,4 @@
-# 백준 베르트랑 공준
+# 4948
 m = []
 while True:
     t = int(input())

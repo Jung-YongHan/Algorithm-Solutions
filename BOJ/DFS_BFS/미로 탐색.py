@@ -1,4 +1,4 @@
-# 미로 탐색
+# 2178
 from collections import deque
 
 def bfs(arr):

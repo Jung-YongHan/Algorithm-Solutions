@@ -1,4 +1,4 @@
-# 팩토리얼
+# 10872
 n=int(input())
 def fact(n):
     if n <= 1:

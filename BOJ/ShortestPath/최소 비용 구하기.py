@@ -1,4 +1,4 @@
-# 최소 비용 구하기
+# 1916
 import sys
 import heapq
 input = sys.stdin.readline

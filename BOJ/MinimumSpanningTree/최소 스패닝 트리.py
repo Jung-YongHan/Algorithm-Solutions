@@ -1,4 +1,4 @@
-# 최소 스패닝 트리
+# 1197
 
 def find_parent(parent, x):
     if parent[x] != x:

@@ -1,4 +1,4 @@
-# 행성 터널
+# 2887
 
 import sys
 input = sys.stdin.readline

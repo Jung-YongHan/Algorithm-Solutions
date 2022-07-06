@@ -1,4 +1,4 @@
-# 숫자 카드
+# 10816
 from bisect import bisect_left, bisect_right
 
 n=int(input())

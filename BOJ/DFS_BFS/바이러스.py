@@ -1,4 +1,4 @@
-# 바이러스
+# 2606
 from collections import deque
 n = int(input())
 m = int(input())

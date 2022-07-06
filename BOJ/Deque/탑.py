@@ -1,4 +1,4 @@
-# 탑
+# 2493
 n = int(input())
 array = list(map(int, input().split()))
 st = []

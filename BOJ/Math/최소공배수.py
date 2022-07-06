@@ -1,4 +1,4 @@
-# 최소공배수
+# 1931
 t = int(input())
 def gcd1(a, b): # b>a
     if b == 0:

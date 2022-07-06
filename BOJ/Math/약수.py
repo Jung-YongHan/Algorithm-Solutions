@@ -1,4 +1,5 @@
-# 약수
+# 1037
+
 # N을 N의 가장 작은 약수로 나누면 N의 가장 큰 약수가 나오는 것을 이용
 m = int(input())
 n = list(map(int, input().split()))

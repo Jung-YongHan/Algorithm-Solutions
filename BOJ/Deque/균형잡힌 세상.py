@@ -1,4 +1,4 @@
-# 균형잡힌 세상
+# 4949
 import sys
 input = sys.stdin.readline
 while True:

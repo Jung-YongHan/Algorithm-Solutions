@@ -1,4 +1,4 @@
-# 프린터 큐
+# 1966
 from collections import deque
 n=int(input())
 c = deque()

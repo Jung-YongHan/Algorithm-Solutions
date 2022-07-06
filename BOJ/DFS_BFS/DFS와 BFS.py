@@ -1,4 +1,4 @@
-# DFS와 BFS
+# 1260
 import sys
 from collections import deque
 input = sys.stdin.readline

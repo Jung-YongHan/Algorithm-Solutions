@@ -1,4 +1,4 @@
-# 오큰수
+# 17298
 n = int(input())
 array = list(map(int, input().split()))
 st = []

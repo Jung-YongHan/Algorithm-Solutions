@@ -1,4 +1,5 @@
-# 누적 합 구하기 4
+# 11659
+
 import sys
 input = sys.stdin.readline
 n, m = map(int, input().split())

@@ -1,4 +1,4 @@
-# 스택 수열
+# 1874
 import sys
 
 n = int(sys.stdin.readline().rstrip())

@@ -1,4 +1,4 @@
-# LCS
+# 9251
 x = input()
 y = input()
 n, m = len(x), len(y)

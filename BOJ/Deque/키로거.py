@@ -1,4 +1,4 @@
-# 키로거
+# 5397
 import sys
 
 def find_password(s1, s2, password):

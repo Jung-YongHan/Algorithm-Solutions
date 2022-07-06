@@ -1,4 +1,4 @@
-# 통계학
+# 2018
 import sys
 from collections import Counter
 n = int(input())

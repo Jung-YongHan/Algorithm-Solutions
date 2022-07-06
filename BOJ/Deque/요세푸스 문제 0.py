@@ -1,4 +1,4 @@
-# 요세푸스 문제 0
+# 11866
 from collections import deque
 n,k=map(int,input().split())
 t = deque()

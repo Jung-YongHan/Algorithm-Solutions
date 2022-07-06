@@ -1,4 +1,4 @@
-# 잃어버린 괄호
+# 1541
 s = input().split('-')
 sum = 0
 for i in s[0].split('+'):

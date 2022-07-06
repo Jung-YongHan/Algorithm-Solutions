@@ -1,4 +1,4 @@
-# 덱
+# 10866
 import sys
 n = int(sys.stdin.readline())
 count = 0

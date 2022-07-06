@@ -1,4 +1,4 @@
-# 쇠막대기
+# 10799
 s = input()
 stack = []
 result = 0

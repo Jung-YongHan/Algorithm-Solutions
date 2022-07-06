@@ -1,4 +1,4 @@
-# 별자리 만들기
+# 4386
 import math
 
 def find_parent(parent, x):

@@ -1,3 +1,8 @@
+# 1717
+import sys
+input = sys.stdin.readline
+sys.setrecursionlimit(int(1e6))
+
 def find_parent(parent, x):
     if parent[x] != x:
         parent[x] = find_parent(parent, parent[x])

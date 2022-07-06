@@ -1,5 +1,4 @@
-# 단지번호붙이기
-
+# 2667
 n = int(input())
 array = []
 for _ in range(n):

@@ -1,4 +1,4 @@
-# 우주신과의 교감
+# 1774
 import math
 import sys
 input = sys.stdin.readline

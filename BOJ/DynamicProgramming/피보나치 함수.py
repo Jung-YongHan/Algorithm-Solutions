@@ -1,4 +1,4 @@
-# 피보나치 함수
+# 1003
 import sys
 input = sys.stdin.readline
 result0 = [0] * 42

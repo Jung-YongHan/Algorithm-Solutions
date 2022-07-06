@@ -1,4 +1,4 @@
-# 체스판 다시 칠하기
+# 1018
 n, m = map(int, input().split())
 board = []
 for _ in range(n):

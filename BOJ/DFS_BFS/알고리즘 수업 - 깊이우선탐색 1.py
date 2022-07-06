@@ -1,4 +1,4 @@
-# 알고리즘 수업 - 깊이우선탐색 1
+# 24479
 import sys
 sys.setrecursionlimit(1000000)
 

@@ -1,4 +1,4 @@
-# 배수와 약수
+# 5086
 import sys
 n = []
 while True:
