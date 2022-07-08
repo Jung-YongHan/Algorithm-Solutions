@@ -1,4 +1,5 @@
 # 7576
+# 시작점이 여러개인 BFS 최단거리 문제
 import sys
 from collections import deque
 input = sys.stdin.readline

@@ -1,4 +1,5 @@
 # 2178
+# BFS를 활용한 최단거리 측정
 from collections import deque
 
 def bfs(arr):
