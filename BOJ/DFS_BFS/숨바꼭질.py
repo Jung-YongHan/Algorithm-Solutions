@@ -1,10 +1,11 @@
 # 1697
+# 1차원 배열에서의 BFS 최단거리 문제
 from collections import deque
 
 n, k = map(int, input().split())
 graph = [-1] * 100001
 graph[n] = 0
-move = [-1, 1, 2]
+
 def bfs():
     q = deque([n])
     while q:
