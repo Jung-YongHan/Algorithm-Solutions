@@ -34,9 +34,7 @@ for _ in range(int(input())):
                 ny = y + dy[i]
                 if nx < 0 or nx >= h or ny < 0 or ny >= w:
                     continue
-                if graph[nx][ny] == -1:
-                    continue
-                if f_graph[nx][ny] != 0:
+                if graph[nx][ny] == -1 or f_graph[nx][ny] != 0:
                     continue
                 f_graph[nx][ny] = f_graph[x][y] + 1
                 f_q.append((nx, ny))
@@ -48,9 +46,7 @@ for _ in range(int(input())):
                 ny = y + dy[i]
                 if nx < 0 or nx >= h or ny < 0 or ny >= w:
                     return s_graph[x][y]
-                if graph[nx][ny] == -1:
-                    continue
-                if s_graph[nx][ny] != 0:
+                if graph[nx][ny] == -1 or s_graph[nx][ny] != 0:
                     continue
                 if f_graph[nx][ny] != 0 and f_graph[nx][ny] <= s_graph[x][y] + 1:
                     continue
@@ -60,5 +56,3 @@ for _ in range(int(input())):
         return 'IMPOSSIBLE'
     
     print(bfs())
-    s_graph.clear()
-    f_graph.clear()
