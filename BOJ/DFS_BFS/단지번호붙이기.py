@@ -1,4 +1,5 @@
 # 2667
+# dfs 풀이
 n = int(input())
 graph = []
 for _ in range(n):
@@ -6,7 +7,6 @@ for _ in range(n):
 
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
-
 
 def dfs(x, y):
     global count
@@ -19,7 +19,6 @@ def dfs(x, y):
                 count += 1
                 dfs(nx, ny)
             
-    
 result = []
 count = 0
 for x in range(n):
