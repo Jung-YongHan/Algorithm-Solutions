@@ -1,3 +1,5 @@
+# 1992
+
 def isValid(x, y, n):
     for i in range(x, x+n):
         for j in range(y, y+n):

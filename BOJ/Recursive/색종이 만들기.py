@@ -1,3 +1,4 @@
+# 2630
 def valid(x, y, n):
     for i in range(x, x+n):
         for j in range(y, y+n):
@@ -16,9 +17,7 @@ def solve(x, y, n):
             solve(x+i*half, y+j*half, half)
 
 n = int(input())
-graph = []
-for _ in range(n):
-    graph.append(list(map(int, input().split())))
+graph = [list(map(int, input().split())) for _ in range(n)]
 
 result = [0]*2
 solve(0, 0, n)
