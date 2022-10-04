@@ -38,10 +38,9 @@ def is_avl(sticker):
         count += 1
     return False, _, _, _
             
-# 스티커를 넘겨 체크
 # 노트북과 스티커가 겹치는 경우(둘다 1인 경우에만 False)
 def check(sticker, x, y):
-    if oob(sticker, x, y):
+    if oob(sticker, x, y): # 범위를 벗어난 경우 False
         return False
     row, col = len(sticker), len(sticker[0])
     for a in range(row):
