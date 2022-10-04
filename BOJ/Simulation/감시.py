@@ -1,4 +1,10 @@
+# 15683
+# pypy3로 제출해야 아슬아슬하게 통과
+# 첫 제출의 코드길이는 무려 '5808'B였으며 시간 초과가 되었다.
+# 바킹독 풀이를 python으로 옮긴 코드이다
+
 from copy import deepcopy
+
 # out of bounds 확인
 def oob(x, y):
     if 0 <= x < n and 0 <= y < m:
