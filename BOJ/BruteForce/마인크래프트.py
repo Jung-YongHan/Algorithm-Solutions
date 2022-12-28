@@ -1,3 +1,5 @@
+# 18111
+
 import sys
 input = sys.stdin.readline
 
@@ -29,4 +31,4 @@ for i in range(min_val, max_val+1):
         result.append((tmp_t, i))
 
 result.sort(key=lambda x:(x[0], -x[1]))
-print(result)
+print(result[0][0], result[0][1])
