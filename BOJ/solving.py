@@ -1,14 +1,15 @@
 import sys
-input = sys.stdin.readline
 
 n, m = map(int, input().split())
-arr = list()
-for i in range(n):
-    arr.append(input().rstrip())
-
-for _ in range(m):
-    s = input().rstrip()
-    if s.isdigit():
-        print(arr[int(s)-1])
+arr1 = set()
+arr2 = list()
+for i in range(n+m):
+    s = sys.stdin.readline().rstrip()
+    if s in arr1:
+        arr2.append(s)
     else:
-        print(arr.index(s)+1)
+        arr1.add(s)
+arr2.sort()
+print(len(arr2))
+for i in arr2:
+    print(i)
