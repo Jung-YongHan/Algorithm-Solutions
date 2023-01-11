@@ -1,23 +1,34 @@
-n = int(input())
-arr = []
-for i in range(n):
-    arr.append(list(map(int, input())))
+from collections import deque
+import sys
 
-def solve(x, y, n): # 재귀 함수
-    if check(x, y, n):
-        print(arr[x][y], end="")
-    else:
-        print("(", end="")
-        for i in range(2):
-            for j in range(2):
-                solve(x+i*n//2, y+j*n//2, n//2)
-        print(")", end="")
+dx = [0, 0, -1, 1]
+dy = [-1, 1, 0, 0]
 
-def check(x, y, n): # 같은 숫자인지 확인하는 함수
-    for i in range(x, x+n):
-        for j in range(y, y+n):
-            if arr[x][y] != arr[i][j]:
-                return False
-    return True
+def bfs(u, v):
+    q = deque([(u, v)])
+    graph[u][v] = 0
+    while q:
+        x, y = q.popleft()
+        for i in range(4):
+            nx = x+dx[i]
+            ny = y+dy[i]
+            if 0 <= nx < n and 0 <= ny < m:
+                if graph[nx][ny] == 1:
+                    q.append((nx, ny))
+                    graph[nx][ny] = 0
 
-solve(0, 0, n)
+for _ in range(int(input())):
+    m, n, k = map(int, input().split())
+    graph = [[0]*m for _ in range(n)]
+    for _ in range(k):
+        u, v = map(int, sys.stdin.readline().split())
+        graph[v][u] = 1
+    
+    result = 0
+    for x in range(n):
+        for y in range(m):
+            if graph[x][y] == 1:
+                bfs(x, y)
+                result += 1
+
+    print(result)
