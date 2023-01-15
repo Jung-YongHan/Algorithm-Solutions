@@ -1,20 +1,15 @@
-from collections import deque
+def solve(x, y, n): # 2^n x 2^n 배열에서 (r,c)를 방문하는 순서를 반환
+    if n == 0:
+        return 0
+    half = 2**(n-1)
+    if x < half and y < half: # 1번 사각형
+        return solve(x, y, n-1)
+    elif x < half and y >= half:
+        return half*half + solve(x, y-half, n-1)
+    elif x >= half and y < half:
+        return 2*half*half + solve(x-half, y, n-1)
+    else:
+        return 3*half*half + solve(x-half, y-half, n-1)
 
-n, m = map(int, input().split())
-arr = [list(map(int, input())) for _ in range(n)]
-
-dx = [-1, 1, 0, 0]
-dy = [0, 0, -1, 1]
-
-q = deque([(0, 0)])
-arr[0][0] = 0
-while q:
-    x, y = q.popleft()
-    for i in range(4):
-        nx = x + dx[i]
-        ny = y + dy[i]
-        if 0<=nx<n and 0<=ny<m:
-            if arr[nx][ny] == 1:
-                q.append((nx, ny))
-                arr[nx][ny] = arr[x][y] + 1
-print(arr[n-1][m-1]+1)
+n, r, c = map(int, input().split())
+print(solve(r, c, n))
